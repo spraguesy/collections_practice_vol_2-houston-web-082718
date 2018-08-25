@@ -156,6 +156,6 @@ def organize_schools (arr)
       new_hash[city] = sch_lo[i]
   end
 
-  schools
+  puts sch_lo
 
 end

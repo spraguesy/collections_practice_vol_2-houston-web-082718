@@ -146,11 +146,9 @@ def organize_schools (arr)
 
   school_locations.each_with_index do |school, i|
     curr_city = locations.index(school)
-    puts curr_city
     sch_lo[curr_city].push(schools[i])
   end
 
-  puts sch_lo
 
   new_hash = {}
 
@@ -158,6 +156,6 @@ def organize_schools (arr)
       new_hash[city] = sch_lo[i]
   end
 
-  puts sch_lo
+  sch_lo
 
 end

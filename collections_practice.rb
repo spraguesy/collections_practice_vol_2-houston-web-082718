@@ -140,6 +140,10 @@ def organize_schools (arr)
 
   locations = school_locations.uniq
 
+  locations.each_with_index do |x|
+    sch_lo.push([])
+  end
+
   school_locations.each_with_index do |school, i|
     curr_city = locations.index(school)
     puts curr_city
